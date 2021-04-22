@@ -12,7 +12,6 @@ body {
 
 .card {
     display: flex;
-    align-content: center;
     width: 80%;
     margin: 25vh auto;
 }
@@ -69,6 +68,7 @@ body {
 @media all and (max-width: 800px) {
     .card {
         flex-direction: column-reverse;
+        margin: 10vh auto;
     }
     .text {
         border-radius: 0px 0px 10px 10px;
