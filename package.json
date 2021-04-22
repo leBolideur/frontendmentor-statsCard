@@ -3,7 +3,9 @@
     "version": "1.0.0",
     "description": "![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "./node_modules/.bin/parcel ./src/index.html",
+        "clean": "rm -Rf .cache/ .parcel-cache/ dist/",
+        "build": "npm run clean; ./node_modules/.bin/parcel build ./src/index.html --dist-dir dist/ --public-url ./"
     },
     "keywords": [],
     "author": "",
@@ -13,7 +15,6 @@
         "@parcel/transformer-sass": "^2.0.0-beta.2",
         "cssnano": "^5.0.1",
         "parcel": "^2.0.0-beta.2",
-        "postcss": "^8.2.10",
         "sass": "^1.32.11"
     }
 }
